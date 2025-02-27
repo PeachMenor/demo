@@ -28,7 +28,7 @@ const About = () => {
           <h6 className="about-item__title">Shaurya Seth</h6>
           <div className="about-item__subtitle">
             <span className="orange-background">Co-Founder</span>
-            <a href="https://linkedin.com/in/shaurya-seth" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
+            <a href="https://linkedin.com/in/shauryaseth1412" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
@@ -62,7 +62,7 @@ const About = () => {
           <h6 className="about-item__title">Prakash Nidhi Verma</h6>
           <div className="about-item__subtitle">
             <span className="orange-background">Co-Founder</span>
-            <a href="https://linkedin.com/in/prakash-verma" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
+            <a href="https://linkedin.com/in/pnidhi26" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
@@ -94,10 +94,10 @@ const About = () => {
           <div className="about-item__image-container">
             <img src='/images/prax.png' alt="prax" className="about-item__image" />
           </div>
-          <h6 className="about-item__title">Sri Laya</h6>
+          <h6 className="about-item__title">Laya Pentapalli</h6>
           <div className="about-item__subtitle">
             <span className="orange-background">Co-Founder</span>
-            <a href="https://linkedin.com/in/prakash-verma" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
+            <a href="https://linkedin.com/in/srilayap" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                 <rect x="2" y="9" width="4" height="12"></rect>
@@ -106,7 +106,7 @@ const About = () => {
             </a>
           </div>
           <p className="about-item__text">
-            Laya brings years of Consulting, Marketing and Sales expertise from industry.
+            Laya brings years of Consulting, Product Management and Sales expertise from industry.
           </p>
 
           <div className="about-item__details">
