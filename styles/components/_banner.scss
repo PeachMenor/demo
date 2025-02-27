@@ -1,0 +1,85 @@
+.banner {
+  z-index: 100;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: $layout-breakpoint-small) {
+    height: 40vh;
+  }
+  .banner-row {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .orange-dot {
+      color: $orange;
+    }
+    @media (max-width: $layout-breakpoint-medium) {
+      &:first-child {
+        margin-top: 4rem;
+      }
+    }
+    &.center {
+      justify-content: center;
+      text-align: center;
+      @media (max-width: $layout-breakpoint-xsmall) {
+        justify-content: center;
+      }
+      .row-letter {
+        left: 0;
+      }
+    }
+    &.right {
+      justify-content: flex-end;
+    }
+
+    .row-title,
+    .row-letter {
+      font-size: 20rem;
+      font-weight: 500;
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+      @media (max-width: $layout-breakpoint-medium) {
+        font-size: 20rem;
+        letter-spacing: -0.4rem;
+      }
+      @media (max-width: $layout-breakpoint-small) {
+        font-size: 8rem;
+        letter-spacing: -0.4rem;
+      }
+    }
+
+    .row-col {
+      width: 50%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      @media (max-width: $layout-breakpoint-medium) {
+        width: 70%;
+      }
+      @media (max-width: 1240px) {
+        &:last-child {
+          display: none;
+        }
+      }
+      @media (max-width: $layout-breakpoint-xsmall) {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .row-message {
+        .row-message__top {
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 2.6rem;
+          width: 320px;
+        }
+        .row-message__bottom {
+          font-size: 1.5rem;
+          line-height: 2.6rem;
+        }
+      }
+    }
+  }
+}

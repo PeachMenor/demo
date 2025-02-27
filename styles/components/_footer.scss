@@ -1,0 +1,102 @@
+.marquee {
+  color: $white;
+  background-color: $orange;
+  padding: 2rem 0 2rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 0 0 10px 10px;
+  span {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+}
+
+footer {
+  width: 100%;
+  background: $black;
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Three evenly spaced columns */
+.footer-columns {
+  display: flex;
+  justify-content: space-evenly; /* Ensures even spacing */
+  align-items: flex-start;
+  width: 100%;
+  text-align: left; /* Aligning text to the left */
+}
+
+.footer-column {
+  flex: 1; /* Ensures equal width for all columns */
+  padding: 0 1rem; /* Adjusts spacing between columns */
+  min-width: 250px; /* Ensures good spacing on smaller screens */
+}
+
+/* span */
+.footer-column span {
+  font-size: 1.4rem;
+  color: $white;
+  margin-bottom: 0.8rem;
+}
+
+/* Align text to the left */
+.footer-column h1 {
+  font-size: 2rem;
+  color: $white;
+  margin-bottom: 0.8rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 1rem; /* Adds space between the list items */
+}
+
+.footer-column li a {
+  color: $white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-column li a:hover {
+  text-decoration: underline;
+}
+
+/* Email Section */
+.email-container {
+  font-size: 1.4rem;
+  color: $orange;
+}
+
+/* Style for 'We are Hiring!' link */
+.hiring-link {
+  font-size: 1.7rem;
+  color: $orange; /* Make "We are Hiring!" orange */
+  text-decoration: none;
+}
+
+.hiring-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom - Centered and Less Space */
+.footer-bottom {
+  margin-top: 1.5rem; /* Reduced space */
+  padding: 0.5rem 0;
+  text-align: center;
+  color: $white;
+  font-size: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}

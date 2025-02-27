@@ -1,0 +1,14 @@
+.circle {
+  width: 16px;
+  height: 16px;
+  background-color: $orange;
+  // border-radius: 100%;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+}
+
+::selection {
+  background: rgba($orange, 0.7);
+  color: $white;
+}
