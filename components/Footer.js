@@ -17,13 +17,13 @@ const Footer = () => {
                 <span>San Francisco, California</span>  
               </li>
               <li>
-                <span>support@luxe.com</span>  
+                <span>contact_us@peachmenor.com</span>  
               </li>
               <li>
-                <span>+1 234 567 89</span>
+                <span>Phone: +1-3102545745</span>
               </li>
               <li>
-                <a href="">Contact us</a>
+                <a href="">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -33,19 +33,19 @@ const Footer = () => {
             <h1>Company</h1>
             <br></br>
             <div className="email-container">
-              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="hiring-link">
+              <a href="https://hire-me.notion.site/Careers-PeachMenor-1ab2e8ee212180968c76e4a1a9a875be" target="_blank" rel="noopener noreferrer" className="hiring-link">
                 We are Hiring!
               </a>
             </div>
             <br></br>
             <ul>
               <li>
-                <a href="https://instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/peachmenor" target="_blank">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/" target="_blank">
+                <a href="https://www.linkedin.com/company/peachmenor/" target="_blank">
                   LinkedIn
                 </a>
               </li>
@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Footer Bottom - Now with better spacing */}
         <div className="footer-bottom">
-          <span className="copy">LUXE | All Rights Reserved &copy; 2025</span>
+          <span className="copy">PeachMenor | All Rights Reserved &copy; 2025</span>
         </div>
       </div>
     </footer>

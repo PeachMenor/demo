@@ -72,7 +72,7 @@ const BannerRowTop = ({ title }) => {
           <button 
               onClick={() => window.open('https://example.com', '_blank', 'noopener,noreferrer')}
               className="row-message__bottom" 
-              style={{ backgroundColor: '#ff4500', border: 'none', padding: '10px 15px', color: 'white', cursor: 'pointer', fontWeight: 'bold', borderRadius: '5px' }}
+              style={{ backgroundColor: '#d19aba', border: 'none', padding: '10px 15px', color: 'white', cursor: 'pointer', fontWeight: 'bold', borderRadius: '5px' }}
             >
               Join Now
           </button>

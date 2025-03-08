@@ -12,7 +12,7 @@ const About = () => {
 
       <div className="about-item">
         <p className="about-item__text">
-          At <span>Luxe Couture</span>, we redefine <span>luxury fashion</span> by seamlessly blending technology with craftsmanship.
+          At <span>PeachMenor</span>, we redefine <span>luxury fashion</span> by seamlessly blending technology with craftsmanship.
           Our mission is to empower individuals with <span>custom-fitted</span> apparel that not only fits flawlessly but also reflects their unique style.
           With our <span>“Build Your Own Design”</span> feature, we offer personalized creations for those who embrace life on their own terms.
           Rooted in innovation, sustainability, and an unwavering commitment to quality, we provide an exclusive experience where style meets individuality.
@@ -71,7 +71,7 @@ const About = () => {
             </a>
           </div>
           <p className="about-item__text">
-            Prakash is the technological mastermind and product strategy behind Luxe.
+            Prakash is the technological mastermind and product strategy behind PeachMenor.
           </p>
 
           <div className="about-item__details">

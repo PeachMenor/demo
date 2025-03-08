@@ -513,10 +513,10 @@ a {
 }
 
 .projects .project-link .project-item span {
-  color: #ff4500;
+  color: #d19aba;
   font-size: 2rem;
   font-weight: 300;
-  border: 2px solid #ff4500;
+  border: 2px solid #d19aba;
   border-radius: 2px;
   padding: 1rem 2rem;
 }
@@ -851,7 +851,7 @@ body.loading {
 }
 
 body {
-  background: #f0eff1;
+  background: #fff;
 }
 
 .container {

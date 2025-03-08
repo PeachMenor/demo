@@ -16,7 +16,7 @@ const Header = () => {
       >
         <div className="header-inner">
           <div className="logo">
-            L<span className="highlight">UX</span>E.
+            <span className="highlight">Peach</span>Menor
           </div>
           <nav className="nav">
             <li>
