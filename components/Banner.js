@@ -48,7 +48,7 @@ const Banner = () => {
               onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
               className="waitlist-button"
               style={{ 
-                backgroundColor: '#d19aba', 
+                backgroundColor: '#ba0d71', 
                 border: 'none', 
                 padding: '10px 15px', 
                 color: 'white', 
