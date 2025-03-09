@@ -1,92 +1,69 @@
 import { motion } from "framer-motion";
-
-const banner = {
-  animate: {
-    transition: {
-      delayChildren: 0.4,
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const letterAni = {
-  initial: { y: 400 },
-  animate: {
-    y: 0,
-    transition: {
-      ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 1,
-    },
-  },
-};
+// Import the image at the top of your file
+const imagePath = "/images/comingsoon.avif";
 
 const Banner = () => {
   return (
-    <motion.div className="banner" variants={banner}>
-      <BannerRowTop title={"Soon"} />
-      <BannerRowBottom title={"in Service."} />
-    </motion.div>
-  );
-};
+    <motion.div className="banner">
+      <div className="banner-content">
+        {/* Image on the left */}
+        <motion.div
+          className="banner-image"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.8,
+            delay: 0.5,
+          }}
+        >
+          <img 
+            src={imagePath}
+            alt="Banner promotional image" 
+            style={{ 
+              borderRadius: "20px",
+              maxWidth: "100%",
+              height: "auto"
+            }} 
+          />
+        </motion.div>
 
-const AnimatedLetters = ({ title, disabled }) => (
-  <motion.span
-    className="row-title"
-    variants={disabled ? null : banner}
-    initial="initial"
-    animate="animate"
-  >
-    {[...title].map((letter, index) => (
-      <motion.span
-        key={index}
-        className="row-letter"
-        variants={disabled ? null : letterAni}
-      >
-        {letter}
-      </motion.span>
-    ))}
-  </motion.span>
-);
-
-const BannerRowTop = ({ title }) => {
-  return (
-    <div className={"banner-row"}>
-      <div className="row-col">
-        <AnimatedLetters title={title} />
-      </div>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          ease: "easeInOut",
-          duration: 0.8,
-          delay: 2,
-        }}
-        className="row-col"
-      >
-        <span className="row-message">
-          <span className="row-message__top">
-            Join Pre-Sale WaitList
-          </span>{" "}
-          <br />
-          <button 
-              onClick={() => window.open('https://example.com', '_blank', 'noopener,noreferrer')}
-              className="row-message__bottom" 
-              style={{ backgroundColor: '#d19aba', border: 'none', padding: '10px 15px', color: 'white', cursor: 'pointer', fontWeight: 'bold', borderRadius: '5px' }}
+        {/* Waitlist content on the right */}
+        <motion.div
+          className="waitlist-content"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.8,
+            delay: 0.8,
+          }}
+        >
+          <span className="waitlist-message">
+            <span className="waitlist-heading">
+              Join Pre-Sale WaitList
+            </span>
+            <br />
+            <button 
+              onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
+              className="waitlist-button"
+              style={{ 
+                backgroundColor: '#d19aba', 
+                border: 'none', 
+                padding: '10px 15px', 
+                color: 'white', 
+                cursor: 'pointer', 
+                fontWeight: 'bold', 
+                borderRadius: '5px',
+                marginTop: '0px' 
+              }}
             >
               Join Now
-          </button>
-        </span>
-      </motion.div>
-    </div>
-  );
-};
-
-const BannerRowBottom = ({ title }) => {
-  return (
-    <div className={"banner-row center"}>
-      <AnimatedLetters title={title} />
-    </div>
+            </button>
+          </span>
+        </motion.div>
+      </div>
+    </motion.div>
   );
 };
 

@@ -3,83 +3,76 @@
   position: relative;
   height: 70vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  @media (max-width: $layout-breakpoint-small) {
-    height: 40vh;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.banner-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.waitlist-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.waitlist-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.waitlist-button {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  display: inline-block;
+}
+
+/* Media Queries */
+@media (max-width: 1240px) {
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
   }
-  .banner-row {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    .orange-dot {
-      color: $orange;
-    }
-    @media (max-width: $layout-breakpoint-medium) {
-      &:first-child {
-        margin-top: 4rem;
-      }
-    }
-    &.center {
-      justify-content: center;
-      text-align: center;
-      @media (max-width: $layout-breakpoint-xsmall) {
-        justify-content: center;
-      }
-      .row-letter {
-        left: 0;
-      }
-    }
-    &.right {
-      justify-content: flex-end;
-    }
+  
+  .banner-image, .waitlist-content {
+    flex: none;
+    width: 100%;
+  }
+  
+  .banner-image {
+    justify-content: center;
+  }
+  
+  .waitlist-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
 
-    .row-title,
-    .row-letter {
-      font-size: 20rem;
-      font-weight: 500;
-      position: relative;
-      display: inline-block;
-      white-space: nowrap;
-      @media (max-width: $layout-breakpoint-medium) {
-        font-size: 20rem;
-        letter-spacing: -0.4rem;
-      }
-      @media (max-width: $layout-breakpoint-small) {
-        font-size: 8rem;
-        letter-spacing: -0.4rem;
-      }
-    }
-
-    .row-col {
-      width: 50%;
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      @media (max-width: $layout-breakpoint-medium) {
-        width: 70%;
-      }
-      @media (max-width: 1240px) {
-        &:last-child {
-          display: none;
-        }
-      }
-      @media (max-width: $layout-breakpoint-xsmall) {
-        width: 100%;
-        justify-content: flex-start;
-      }
-      .row-message {
-        .row-message__top {
-          font-weight: 700;
-          font-size: 2rem;
-          line-height: 2.6rem;
-          width: 320px;
-        }
-        .row-message__bottom {
-          font-size: 1.5rem;
-          line-height: 2.6rem;
-        }
-      }
-    }
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    padding: 60px 0;
+  }
+  
+  .waitlist-heading {
+    font-size: 1.6rem;
+  }
+  
+  .waitlist-button {
+    font-size: 1.2rem;
   }
 }
