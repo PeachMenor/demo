@@ -95,7 +95,7 @@ export default function DetailProject({ project }) {
         <h1>{project.data.attributes.title}</h1>
         <p>{project.data.attributes.content || `Description for ${project.data.attributes.title}`}</p>
         <Image
-          src={project.data.attributes.mediaUrl || "https://mik-development.s3.eu-central-1.amazonaws.com/mursee.png"}
+          src={project.data.attributes.mediaUrl}
           width="400"
           height="300"
           alt={project.data.attributes.slug}

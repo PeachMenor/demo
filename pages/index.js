@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Footer from "../components/Footer";
+
 // import Marquee from "../components/Marquee";
 import Marquee from "react-fast-marquee";
 // import Experience from "three/Experience";
@@ -30,10 +31,11 @@ export default function Home({ projects }) {
             <Banner />
             
             <Projects id="projects" projects={projects} />
+            
             <Marquee
               className="marquee"
               gradient="false"
-              gradientColor="orange"
+              gradientColor="pink"
               speed="120"
             >
               <span>
@@ -45,10 +47,58 @@ export default function Home({ projects }) {
                 —
               </span>
             </Marquee>
+
             <About />
 
             {/* <Pricing /> */}
+
           </div>
+
+          {/* <Marquee
+              className="marquee"
+              gradient="false"
+              gradientColor="pink"
+              speed="30"
+            >
+              <span className="waitlist-message">
+                <span className="waitlist-heading">
+                  Join Pre-Sale WaitList
+                </span>
+                <button 
+                  onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
+                  className="waitlist-button"
+                  style={{ 
+                    backgroundColor: '#ba0d71', 
+                    border: 'none', 
+                    padding: '10px 15px', 
+                    color: 'white', 
+                    cursor: 'pointer', 
+                    fontWeight: 'bold', 
+                    borderRadius: '5px',
+                    marginTop: '0px' 
+                  }}
+                >
+                  Join Peachy Club
+                </button>
+              </span>
+            </Marquee> */}
+
+            <Marquee
+              className="marqueewaitlist"
+              gradient={false}
+              gradientColor="pink"
+              speed={15}
+            >
+              <span className="waitlist-message">
+                <span className="waitlist-heading">Join Pre-Sale WaitList</span>
+                <button 
+                  onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
+                  className="waitlist-button"
+                >
+                  Join Peachy Club
+                </button>
+              </span>
+            </Marquee>
 
           <Footer />
         </>

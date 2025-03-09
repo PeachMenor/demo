@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-columns">
           {/* Column 1: Contact Us */}
           <div className="footer-column">
-            <h1>Get in Touch</h1>
+            <h1>PeachMenor</h1>
             <br></br>
             <ul>
             <li>
@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* Column 2: Social Links */}
           <div className="footer-column">
-            <h1>Company</h1>
+            <h1>Get in Touch</h1>
             <br></br>
             <div className="email-container">
               <a href="https://hire-me.notion.site/Careers-PeachMenor-1ab2e8ee212180968c76e4a1a9a875be" target="_blank" rel="noopener noreferrer" className="hiring-link">
@@ -54,17 +54,17 @@ const Footer = () => {
 
           {/* Column 3: Quick Links */}
           <div className="footer-column">
-            <h1>Offerings</h1>
+            <h1>Company</h1>
             <br></br>
             <ul>
               <li>
-                <span>AI-based Fashion Sense</span>
+                <span>About Us</span>
               </li>
               <li>
-                <span>Virtual Store & Try-ons</span>
+                <span>Our Mission</span>
               </li>
               <li>
-                <span>Luxury Customizable Clothings</span>
+                <span>Our Vision</span>
               </li>
             </ul>
           </div>

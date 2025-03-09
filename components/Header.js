@@ -18,17 +18,17 @@ const Header = () => {
           <div className="logo">
             <span className="highlight">Peach</span>Menor
           </div>
-          <nav className="nav">
+          {/* <nav className="nav">
             <li>
               <a href="#projects">Offerings</a>
             </li>
-            {/* <li>
+            <li>
               <a href="#strategy">Team</a>
-            </li> */}
-          </nav>
-          <div className="contact">
+            </li>
+          </nav> */}
+          {/* <div className="contact">
             <a href="#footer">About Us</a>
-          </div>
+          </div> */}
           <div className="hamburger-menu">
             <span></span>
             <span></span>

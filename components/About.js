@@ -5,25 +5,30 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-item">
-        <span className="about__title">Our Team & Vision</span>
+        <span className="about__title">Our Mission and Vision</span>
       </div>
       <br />
       <br />
 
       <div className="about-item">
         <p className="about-item__text">
-          At <span>PeachMenor</span>, we redefine <span>luxury fashion</span> by seamlessly blending technology with craftsmanship.
+          At <span>PeachMenor</span>, we redefine <span>premium fashion</span> by seamlessly blending technology with craftsmanship.
           Our mission is to empower individuals with <span>custom-fitted</span> apparel that not only fits flawlessly but also reflects their unique style.
-          With our <span>“Build Your Own Design”</span> feature, we offer personalized creations for those who embrace life on their own terms.
+          With our <span>Build Your Own Design</span> feature, we offer personalized creations for those who embrace life on their own terms.
           Rooted in innovation, sustainability, and an unwavering commitment to quality, we provide an exclusive experience where style meets individuality.
-          Through <span>AI-based virtual try-ons</span> and a seamless design process, we make luxury fashion effortless, accessible, and truly one of a kind.
+          Through <span>AI-based virtual try-ons</span> and a seamless design process, we make premium fashion effortless, accessible, and truly one of a kind.
+        </p>
+        <br></br>
+        <p className="about-item__text">
+        We envision a world where fashion transcends boundaries, where every individual experiences the luxury of perfectly tailored clothing that celebrates their unique identity. PeachMenor aspires to pioneer the intersection of cutting-edge technology and timeless craftsmanship, creating a new paradigm in premium fashion where personalization is paramount.
+        Our vision is to cultivate a global community that values individuality, quality, and conscious consumption—transforming how people express themselves through what they wear.
         </p>
       </div>
 
       <div className="about-container">
         <div className="about-item">
           <div className="about-item__image-container">
-            <img src='/images/prax.png' alt="prax" className="about-item__image" />
+            <img src='/images/cf1.png' alt="shaurya" className="about-item__image" />
           </div>
           <h6 className="about-item__title">Shaurya Seth</h6>
           <div className="about-item__subtitle">
@@ -57,7 +62,7 @@ const About = () => {
 
         <div className="about-item">
           <div className="about-item__image-container">
-            <img src='/images/prax.png' alt="prax" className="about-item__image" />
+            <img src='/images/cf2.png' alt="prax" className="about-item__image" />
           </div>
           <h6 className="about-item__title">Prakash Nidhi Verma</h6>
           <div className="about-item__subtitle">
@@ -92,7 +97,7 @@ const About = () => {
 
         <div className="about-item">
           <div className="about-item__image-container">
-            <img src='/images/prax.png' alt="prax" className="about-item__image" />
+            <img src='/images/cf3.png' alt="laya" className="about-item__image" />
           </div>
           <h6 className="about-item__title">Sri Laya Pentapalli</h6>
           <div className="about-item__subtitle">

@@ -114,7 +114,7 @@ const Projects = () => {
             delay: 1.8,
           }}
         >
-          What we offer?
+          Customer Service
         </motion.span>
       </motion.div>
 

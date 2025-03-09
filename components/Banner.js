@@ -58,7 +58,7 @@ const Banner = () => {
                 marginTop: '0px' 
               }}
             >
-              Join Now
+              Join Peachy Club
             </button>
           </span>
         </motion.div>

@@ -11,6 +11,46 @@
   }
 }
 
+.marqueewaitlist {
+  color: $white;
+  background-color: #d19aba;
+  padding: 2rem 2rem 2rem 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 0 0 10px 10px;
+  
+  span {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  
+  .waitlist-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .waitlist-heading {
+      font-size: 2.5rem;
+      margin-right: 2rem;
+      margin-top: auto;
+      font-weight: bold;
+    }
+    
+    .waitlist-button {
+      background-color: #ba0d71;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      // border-radius: 5px;
+      font-size: 1.5rem;
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+}
+
 footer {
   width: 100%;
   background: #f0f3f5;

@@ -1,7 +1,7 @@
 const Pricing = () => {
   return (
     <div className="pricing">
-      <span className="pricing__title">// Prijzen</span>
+      <span className="pricing__title">How it Works?</span>
       
       <div className="pricing-container">
           <div className="pricing-component">
