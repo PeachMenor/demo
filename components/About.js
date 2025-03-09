@@ -37,20 +37,20 @@ const About = () => {
             </a>
           </div>
           <p className="about-item__text">
-            Shaurya excels in Business Operation and Execution expertise.
+           Shaurya brings strategic insight to global operations in supply chain management experience from the manufacturing sector.
           </p>
 
           <div className="about-item__details">
             <p className="about-item__heading"><strong>Education:</strong></p>
             <ul className="about-item__list">
-              <li>MS, Engineering @UCLA</li>
-              <li>B.Tech, Engineering @NIT K</li>
+              <li>MS, Materials Engineering @UC Los Angeles</li>
+              <li>B.Tech, Metallurgical Engineering @NIT Karnataka</li>
             </ul>
 
             <p className="about-item__heading"><strong>Background:</strong></p>
             <ul className="about-item__list">
-              <li>Engineer @XYZ</li>
-              <li>Engineer @XYZ</li>
+              <li>PI Engineer @Analog Devices</li>
+              <li>Engineer @Seagate Technology</li>
             </ul>
           </div>
         </div>
@@ -71,19 +71,19 @@ const About = () => {
             </a>
           </div>
           <p className="about-item__text">
-            Prakash is the technological mastermind and product strategy behind PeachMenor.
+            Prakash is the technological mastermind and product strategist behind PeachMenor.
           </p>
 
           <div className="about-item__details">
             <p className="about-item__heading"><strong>Education:</strong></p>
             <ul className="about-item__list">
-              <li>MS, Computer Science @CSU Chico</li>
+              <li>MS, Computer Science @California State University</li>
               <li>B.Tech, Computer Science @IIIT Jabalpur</li>
             </ul>
 
             <p className="about-item__heading"><strong>Background:</strong></p>
             <ul className="about-item__list">
-              <li>Product Analyst @AWS</li>
+              <li>Product Analyst @Amazon (AWS)</li>
               <li>Product Manager @Replicon</li>
               <li>Software Engineer @UpGrad</li>
             </ul>
@@ -94,7 +94,7 @@ const About = () => {
           <div className="about-item__image-container">
             <img src='/images/prax.png' alt="prax" className="about-item__image" />
           </div>
-          <h6 className="about-item__title">Laya Pentapalli</h6>
+          <h6 className="about-item__title">Sri Laya Pentapalli</h6>
           <div className="about-item__subtitle">
             <span className="orange-background">Co-Founder</span>
             <a href="https://linkedin.com/in/srilayap" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
@@ -106,20 +106,21 @@ const About = () => {
             </a>
           </div>
           <p className="about-item__text">
-            Laya brings years of Consulting, Product Management and Sales expertise from industry.
+            Laya brings years of Consulting, Management and Sales expertise from supply chain industry.
           </p>
 
           <div className="about-item__details">
             <p className="about-item__heading"><strong>Education:</strong></p>
             <ul className="about-item__list">
-              <li>MBA, Sales and Marketing @UCLA</li>
-              <li>B.Tech, Engineering @SRM University</li>
+              <li>MBA, General @UC Los Angeles</li>
+              <li>MEM, Sales & Marketing @Audencia France</li>
+              <li>B.Tech, EEE @SRM Chennai</li>
             </ul>
 
             <p className="about-item__heading"><strong>Background:</strong></p>
             <ul className="about-item__list">
-              <li>Consultant @XYZ</li>
-              <li>Product @XYZ</li>
+              <li>Growth Product Manager @Milkyway X</li>
+              <li>Senior Lead Consultant @ADP</li>
             </ul>
           </div>
         </div>

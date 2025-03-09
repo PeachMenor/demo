@@ -23,7 +23,7 @@ const Footer = () => {
                 <span>Phone: +1-3102545745</span>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank">Contact Us</a>
               </li>
             </ul>
           </div>
