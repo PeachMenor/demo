@@ -18,7 +18,7 @@
       cursor: pointer;
       font-size: 2rem;
       a {
-        color: $white;
+        color: $black;
         font-weight: 500;
       }
       @media (max-width: $layout-breakpoint-small) {
@@ -27,7 +27,7 @@
     }
   }
   .project-section-title {
-    color: rgba($white, 0.75);
+    color: rgba($black, 0.75);
     font-size: 1.5rem;
     @media (max-width: $layout-breakpoint-small) {
       font-size: 1.2rem;
@@ -42,7 +42,7 @@
       align-items: center;
       text-align: left;
       border-bottom: 2px solid $background;
-      color: $white;
+      color: $black;
       transition: all 200ms ease;
       h3 {
         font-size: 6rem;
@@ -63,7 +63,7 @@
           font-size: 1.5rem;
           font-weight: 300;
           margin-top: 1rem;
-          color: rgba($white, 0.75);
+          color: rgba($black, 0.75);
         }
       }
       span {
@@ -130,13 +130,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $black;
+  background: $grey;
   width: 50vw;
   min-height: 200px;
   top: calc(50% - 100px);
   left: calc(50% - 25vw);
   span {
-    color: $black;
+    color: $grey;
     text-align: center;
     font-size: clamp(4rem, 7rem, 9rem);
     padding: 2rem 0;
@@ -154,7 +154,7 @@
   height: 14rem;
   aspect-ratio: 1;
   border-radius: 100%;
-  background: $white;
+  background: $black;
   position: absolute;
   display: flex;
   align-items: center;

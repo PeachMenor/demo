@@ -29,6 +29,7 @@ export default function Home({ projects }) {
             <Header />
             <Banner />
             
+            <Projects id="projects" projects={projects} />
             <Marquee
               className="marquee"
               gradient="false"
@@ -44,9 +45,6 @@ export default function Home({ projects }) {
                 —
               </span>
             </Marquee>
-            
-            <Projects id="projects" projects={projects} />
-           
             <About />
 
             {/* <Pricing /> */}

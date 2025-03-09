@@ -114,8 +114,6 @@ const Projects = () => {
             delay: 1.8,
           }}
         >
-          <br></br>
-          <br></br>
           What we offer?
         </motion.span>
       </motion.div>
