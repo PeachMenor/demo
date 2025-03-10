@@ -1,7 +1,7 @@
 .circle {
   width: 16px;
   height: 16px;
-  background-color: $orange;
+  background-color: $black;
   // border-radius: 100%;
   position: fixed;
   z-index: 999;
@@ -9,6 +9,6 @@
 }
 
 ::selection {
-  background: rgba($orange, 0.7);
+  background: rgba($pinkhard, 0.8);
   color: $white;
 }

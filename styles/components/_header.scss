@@ -56,9 +56,9 @@
       // flex: 1;
       align-self: center;
       a {
-        color: $orange;
+        color: $pinkhard;
         text-decoration: none;
-        border-bottom: 2px solid $orange;
+        border-bottom: 2px solid $pinkhard;
         padding-bottom: 12px;
         white-space: nowrap;
         @media (max-width: $layout-breakpoint-xsmall) {
@@ -95,7 +95,7 @@
 }
 
 .highlight {
-  color: $orange; /* Using your existing orange variable */
+  color: $pinkhard; /* Using your existing orange variable */
   font-weight: 700;
   font-size: 3rem;
   @media (max-width: $layout-breakpoint-medium) {

@@ -39,7 +39,7 @@ const Banner = () => {
             delay: 0.8,
           }}
         >
-          <span className="waitlist-message">
+          {/* <span className="waitlist-message">
             <span className="waitlist-heading">
               Join Pre-Sale WaitList
             </span>
@@ -60,7 +60,7 @@ const Banner = () => {
             >
               Join Peachy Club
             </button>
-          </span>
+          </span> */}
         </motion.div>
       </div>
     </motion.div>

@@ -1,6 +1,6 @@
 .marquee {
   color: $white;
-  background-color: #d19aba;
+  background-color: #545333;
   padding: 2rem 0 2rem 0;
   overflow: hidden;
   white-space: nowrap;
@@ -13,7 +13,7 @@
 
 .marqueewaitlist {
   color: $white;
-  background-color: #d19aba;
+  background-color: #545333;
   padding: 2rem 2rem 2rem 2rem;
   overflow: hidden;
   white-space: nowrap;
@@ -43,7 +43,7 @@
       color: white;
       cursor: pointer;
       font-weight: bold;
-      // border-radius: 5px;
+      border-radius: 5px;
       font-size: 1.5rem;
       display: inline-block;
       white-space: nowrap;
@@ -117,7 +117,7 @@ footer {
 /* Email Section */
 .email-container {
   font-size: 1.4rem;
-  color: $orange;
+  color: $pinkhard;
 }
 
 /* Style for 'We are Hiring!' link */
