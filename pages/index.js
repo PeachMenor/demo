@@ -48,9 +48,9 @@ export default function Home({ projects }) {
               </span>
             </Marquee>
 
-            <About />
+            <Pricing />
 
-            {/* <Pricing /> */}
+            <About />
 
           </div>
 

@@ -39,28 +39,6 @@ const Banner = () => {
             delay: 0.8,
           }}
         >
-          {/* <span className="waitlist-message">
-            <span className="waitlist-heading">
-              Join Pre-Sale WaitList
-            </span>
-            <br />
-            <button 
-              onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
-              className="waitlist-button"
-              style={{ 
-                backgroundColor: '#ba0d71', 
-                border: 'none', 
-                padding: '10px 15px', 
-                color: 'white', 
-                cursor: 'pointer', 
-                fontWeight: 'bold', 
-                borderRadius: '5px',
-                marginTop: '0px' 
-              }}
-            >
-              Join Peachy Club
-            </button>
-          </span> */}
         </motion.div>
       </div>
     </motion.div>
