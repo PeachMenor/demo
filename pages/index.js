@@ -54,14 +54,9 @@ export default function Home({ projects }) {
 
           </div>
 
-            <Marquee
-              className="marqueewaitlist"
-              gradient={false}
-              gradientColor="pink"
-              speed={15}
-            >
+            <div className="marqueewaitlist">
               <span className="waitlist-message">
-                <span className="waitlist-heading">Join WaitList</span>
+                <span className="waitlist-heading">Join The WaitList</span>
                 <button 
                   onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
                   className="waitlist-button"
@@ -69,7 +64,7 @@ export default function Home({ projects }) {
                   Join Peachy Club
                 </button>
               </span>
-            </Marquee>
+            </div>
 
           <Footer />
         </>
