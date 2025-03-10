@@ -50,7 +50,7 @@ export default function Home({ projects }) {
 
             <Pricing />
 
-            <About />
+            {/* <About /> */}
 
           </div>
 

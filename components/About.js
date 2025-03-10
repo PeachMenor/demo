@@ -25,7 +25,9 @@ const About = () => {
         </p>
       </div>
 
+
       <div className="about-container">
+
         <div className="about-item">
           <div className="about-item__image-container">
             <img src='/images/cf1.png' alt="shaurya" className="about-item__image" />
@@ -129,7 +131,10 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </div>
+      
+      </div> 
+
+
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Pricing = () => {
       <div className="pricing-container">
           <div className="pricing-component">
             <div className="pricing-component__simple">
-              <span>Starter</span>
+              <span>Step 1</span>
               <h2>Customization</h2>
               <ul>
                 <li><span>Ideaal voor starters:</span> Perfect voor kleine bedrijven of persoonlijke projecten.</li>
@@ -17,7 +17,7 @@ const Pricing = () => {
           </div>
           <div className="pricing-component">
             <div className="pricing-component__webshop">
-              <span>Webshop</span>
+              <span>Step 2</span>
               <h2>Try Measurement</h2>
               <ul>
               <li><span>Voor E-commerce Succes:</span> Ideaal voor middelgrote bedrijven die online willen verkopen.</li>
@@ -28,7 +28,7 @@ const Pricing = () => {
           </div>
           <div className="pricing-component">
             <div className="pricing-component__custom">
-              <span>Custom</span>
+              <span>Step 3</span>
               <h2>Place Order</h2>
               <ul>
               <li><span>Volledig Op Maat:</span> Unieke oplossingen voor complexe eisen en specifieke wensen.</li>
