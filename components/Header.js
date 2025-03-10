@@ -22,9 +22,6 @@ const Header = () => {
             <li>
               <a href="#projects">Offerings</a>
             </li>
-            <li>
-              <a href="#strategy">Team</a>
-            </li>
           </nav> */}
           <div className="contact">
             {/* <a href="#footer">Join Waitlist</a> */}
