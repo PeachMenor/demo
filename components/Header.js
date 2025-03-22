@@ -3,11 +3,35 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("team");
+  const [activeTab, setActiveTab] = useState("vision");
+  const [openFaq, setOpenFaq] = useState(null);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const VisionContent = () => (
+    <div className="about">
+      <div className="about-item">
+        <p className="about-item__text">
+          At <span>PeachMenor</span>, we redefine <span>premium fashion</span> by seamlessly blending technology with craftsmanship.
+          Our mission is to empower individuals with <span>custom-fitted</span> apparel that not only fits flawlessly but also reflects their unique style.
+          With our <span>Build Your Own Design</span> feature, we offer personalized creations for those who embrace life on their own terms.
+          Rooted in innovation, sustainability, and an unwavering commitment to quality, we provide an exclusive experience where style meets individuality.
+          Through <span>AI-based virtual try-ons</span> and a seamless design process, we make premium fashion effortless, accessible, and truly one of a kind.
+        </p>
+        <br></br>
+        <p className="about-item__text">
+        We envision a world where fashion transcends boundaries, where every individual experiences the luxury of perfectly tailored clothing that celebrates their unique identity. PeachMenor aspires to pioneer the intersection of cutting-edge technology and timeless craftsmanship, creating a new paradigm in premium fashion where personalization is paramount.
+        Our vision is to cultivate a global community that values individuality, quality, and conscious consumption—transforming how people express themselves through what they wear.
+        </p>
+      </div>
+    </div>
+  );
 
   // Team content is now a component rather than just text
   const TeamContent = () => (
@@ -119,25 +143,6 @@ const Header = () => {
     </div>
   );
 
-  const VisionContent = () => (
-    <div className="about">
-      <div className="about-item">
-        <p className="about-item__text">
-          At <span>PeachMenor</span>, we redefine <span>premium fashion</span> by seamlessly blending technology with craftsmanship.
-          Our mission is to empower individuals with <span>custom-fitted</span> apparel that not only fits flawlessly but also reflects their unique style.
-          With our <span>Build Your Own Design</span> feature, we offer personalized creations for those who embrace life on their own terms.
-          Rooted in innovation, sustainability, and an unwavering commitment to quality, we provide an exclusive experience where style meets individuality.
-          Through <span>AI-based virtual try-ons</span> and a seamless design process, we make premium fashion effortless, accessible, and truly one of a kind.
-        </p>
-        <br></br>
-        <p className="about-item__text">
-        We envision a world where fashion transcends boundaries, where every individual experiences the luxury of perfectly tailored clothing that celebrates their unique identity. PeachMenor aspires to pioneer the intersection of cutting-edge technology and timeless craftsmanship, creating a new paradigm in premium fashion where personalization is paramount.
-        Our vision is to cultivate a global community that values individuality, quality, and conscious consumption—transforming how people express themselves through what they wear.
-        </p>
-      </div>
-    </div>
-  );
-
   const ContactUsContent = () => (
     <div className="about-item">
       <p className="about-item__text">
@@ -146,23 +151,83 @@ const Header = () => {
     </div>
   );
 
+  const FaqContent = () => {
+    const faqs = [
+      {
+        question: "How does PeachMenor's custom sizing work?",
+        answer: "PeachMenor uses advanced AI technology to create perfectly fitted garments. Simply provide your measurements through our easy-to-follow guide, or upload photos for our AI to analyze. Our proprietary algorithm ensures each piece is tailored specifically to your unique body shape."
+      },
+      {
+        question: "What makes PeachMenor different from other custom clothing brands?",
+        answer: "PeachMenor stands apart through our combination of cutting-edge technology, premium sustainable materials, and unparalleled customization options. Our 'Build Your Own Design' feature lets you create truly one-of-a-kind pieces while our AI-powered virtual try-on gives you confidence in your selections before purchasing."
+      },
+      {
+        question: "How long does it take to receive my custom order?",
+        answer: "Most custom orders are completed and shipped within 10-14 business days. This timeframe allows our expert craftspeople to meticulously create your personalized garment. For special rush orders, please contact our customer service team directly."
+      },
+      {
+        question: "What is your return policy for custom items?",
+        answer: "While custom items are created specifically for you, we stand behind our fit guarantee. If your garment doesn't fit perfectly, we'll adjust it free of charge. For other issues, we offer store credit or exchanges within 30 days. Please note that highly personalized designs may be subject to our specialized return policy."
+      }
+    ];
 
+    return (
+      <div className="faq-container">
+        {faqs.map((faq, index) => (
+          <div key={index} className="faq-item">
+            <div 
+              className={`faq-question ${openFaq === index ? 'active' : ''}`} 
+              onClick={() => toggleFaq(index)}
+            >
+              <span>{faq.question}</span>
+              <div className="faq-icon">
+                {openFaq === index ? 
+                  <span className="minus"></span> : 
+                  <span className="plus"></span>
+                }
+              </div>
+            </div>
+            <AnimatePresence>
+              {openFaq === index && (
+                <motion.div 
+                  className="faq-answer"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <p>{faq.answer}</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  // Reordered menu items - Vision first, then Team
   const menuItems = [
-    {
-      id: "team",
-      title: "Team",
-      content: <TeamContent />
-    },
     {
       id: "vision",
       title: "Vision & Mission",
       content: <VisionContent />    
     },
     {
+      id: "team",
+      title: "Team",
+      content: <TeamContent />
+    },
+    {
       id: "contact",
       title: "Contact Us",
       content: <ContactUsContent />     
-      }
+    },
+    {
+      id: "faq",
+      title: "FAQ",
+      content: <FaqContent />     
+    }
   ];
 
   return (

@@ -385,3 +385,130 @@
   /* Keep existing styles */
   text-align: left; /* Keep the list items left-aligned for readability */
 }
+
+
+/* FAQ Section Styles - Isolated from header and menu styles */
+.faq-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $black;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-question.active {
+  color: $pinkhard;
+  background-color: #f9f9f9;
+}
+
+/* Custom plus/minus icons for FAQ */
+.faq-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+/* Renamed classes to avoid conflicts */
+.faq-icon .plus {
+  position: relative;
+  display: block;
+}
+
+.faq-icon .plus:before, 
+.faq-icon .plus:after {
+  content: '';
+  position: absolute;
+  background-color: $pinkhard;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon .plus:before {
+  width: 16px;
+  height: 2px;
+  top: 11px;
+  left: 4px;
+}
+
+.faq-icon .plus:after {
+  width: 2px;
+  height: 16px;
+  top: 4px;
+  left: 11px;
+}
+
+.faq-icon .minus:before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: $pinkhard;
+  top: 11px;
+  left: 4px;
+}
+
+/* Hide the vertical line for minus */
+.faq-question.active .faq-icon .plus:after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-answer {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+}
+
+.faq-answer p {
+  padding: 20px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive adjustments for FAQ section */
+@media (max-width: $layout-breakpoint-medium) {
+  .faq-question {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+  
+  .faq-answer p {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: $layout-breakpoint-xsmall) {
+  .faq-question {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+  
+  .faq-answer p {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}
