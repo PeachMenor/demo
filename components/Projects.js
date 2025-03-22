@@ -21,47 +21,6 @@ const ImageFollower = () => {
     });
   }, [imagePos]);
 
-  // useEffect(() => {
-  //   const handleMouseMove = (e) => {
-  //     setImagePos({
-  //       x: e.clientX,
-  //       y: e.clientY,
-  //     });
-  //   };
-
-  //   window.addEventListener("mousemove", handleMouseMove);
-
-  //   return () => {
-  //     window.removeEventListener("mousemove", handleMouseMove);
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const handleMouseEnter = (e) => {
-  //     const id = e.target.getAttribute("data-id");
-  //     const slug = e.target.getAttribute("data-slug");
-  //     setHoveredImageSlug(slug);
-  //     setHoveredImage(id);
-  //     setIsImageVisible(true);
-  //   };
-  //   const handleMouseLeave = () => {
-  //     setHoveredImage(null);
-  //     setIsImageVisible(false);
-  //   };
-
-  //   const itemElements = document.querySelectorAll(".project-item");
-  //   itemElements.forEach((element) => {
-  //     element.addEventListener("mouseenter", handleMouseEnter);
-  //     element.addEventListener("mouseleave", handleMouseLeave);
-  //   });
-  //   return () => {
-  //     itemElements.forEach((element) => {
-  //       element.removeEventListener("mouseenter", handleMouseEnter);
-  //       element.removeEventListener("mouseleave", handleMouseLeave);
-  //     });
-  //   };
-  // });
-
   return (
     isImageVisible && (
       <div
