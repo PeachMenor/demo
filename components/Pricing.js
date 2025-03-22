@@ -9,7 +9,7 @@ const Pricing = () => {
               <span>Step 1</span>
               <h2>Customization</h2>
               <div className="image-container">
-                <img src="/images/step1.jpg" alt="customization" />
+                <img src="/images/step1.png" alt="customization" />
               </div>
             </div>
           </div>
@@ -18,7 +18,7 @@ const Pricing = () => {
               <span>Step 2</span>
               <h2>Try Measurement</h2>
               <div className="image-container">
-                <img src="/images/step2.jpg" alt="body measurement" />
+                <img src="/images/step2.png" alt="body measurement" />
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@ const Pricing = () => {
               <span>Step 3</span>
               <h2>Place Order</h2>
               <div className="image-container">
-                <img src="/images/step3.jpg" alt="place order" />
+                <img src="/images/step3.png" alt="place order" />
               </div>
             </div>
           </div>
