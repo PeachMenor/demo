@@ -16,20 +16,23 @@ const Banner = () => {
             duration: 0.8,
             delay: 0.5,
           }}
-        >
+          >
           <img 
             src={imagePath}
             alt="Banner promotional image" 
             style={{ 
               borderRadius: "20px",
-              maxWidth: "100%",
-              height: "auto"
+              maxWidth: "90%", // Increased from 100%
+              width: "auto",
+              height: "auto",
+              margin: "0 auto", // Center the image
+              display: "block" // Needed for margin auto to work
             }} 
           />
         </motion.div>
 
         {/* Waitlist content on the right */}
-        <motion.div
+        {/* <motion.div
           className="waitlist-content"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,7 +42,7 @@ const Banner = () => {
             delay: 0.8,
           }}
         >
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );

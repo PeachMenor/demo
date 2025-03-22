@@ -50,8 +50,6 @@ const Projects = () => {
     }))
   };
 
-  // console.log(projects);
-
   return (
     <motion.div
       transition={{ ease: [0.6, 0.01, -0.05, 0.9], duration: 1.6 }}
@@ -88,49 +86,28 @@ const Projects = () => {
         className="projects"
         id="projects"
       >
-        {/* <div className="project-section-titles">
-          <span className="project-section-title">// What will our platform offer?</span>
-        </div> */}
-
         {projects.data
           .sort((a, b) => b.id - a.id)
-          .map((project) => (
-            <div key={project.id}>
-              <a
-                // href={`${project.attributes.content.split("|")[0]}`}
-                className="project-link"
-                // target="_blank"
-              >
-                <div
-                  className="project-item"
-                  // data-id={project.attributes.coverVideo.data.id}
-                  // data-slug={project.attributes.headerImage.data.attributes.url}
-                >
-                  <div className="project-item__title">
-                    <h3>{project.attributes.title}</h3>
-                    <p>{project.attributes.slug}</p>
-                    {/* <p>{project.attributes.content.split("|")[1]}</p> */}
+          .map((project, index) => (
+            <div key={project.id} className={`project-container ${index % 2 === 0 ? 'even' : 'odd'}`}>
+              <a className="project-link">
+                <div className="project-item">
+                  <div className="project-content">
+                    <div className="project-item__title">
+                      <h3>{project.attributes.title}</h3>
+                      <p>{project.attributes.slug}</p>
+                    </div>
+
+                    <div className="image-card">
+                      <div className="image-card-bg"></div>
+                      <div className="image-frame">
+                        <img 
+                          src={project.attributes.headerImage} 
+                          alt={project.attributes.title}
+                        />
+                      </div>
+                    </div>
                   </div>
-
-                  {/* <span className="span--desktop">
-                    {project.attributes.slug}
-                  </span> */}
-
-                   {/* Image frame replacing the slug span */}
-                  <div className="image-frame">
-                    <img 
-                      src={project.attributes.headerImage} 
-                      alt={project.attributes.title}
-                      style={{
-                        maxWidth: "100%",
-                        height: "auto",
-                        borderRadius: "8px",
-                        boxShadow: "0 4px 8px rgba(215, 26, 26, 0.92)"
-                      }}
-                    />
-                  </div>
-
-                  <span className="span--mobile">I &amp; O</span>
                 </div>
               </a>
               <ImageFollower />

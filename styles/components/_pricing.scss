@@ -3,13 +3,14 @@
   width: 90%;
   &__title {
     color: rgba($black, 0.5);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .pricing-container {
-    margin: 6rem 0;
+    margin: 4rem 0;
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 4rem;
 
     @media (max-width: $layout-breakpoint-xsmall) {
       display: flex;
@@ -18,13 +19,18 @@
   
     .pricing-component {
       color: $white;
-
+      flex: 1;
+      display: flex;
+      margin-bottom: 2rem; /* Added bottom margin to all cards */
+      
       &__simple, &__webshop, &__custom {
-        padding: 4rem 2rem;
+        padding: 2rem 2rem;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem; /* Reduced gap between elements */
         border-radius: 10px;
+        width: 100%;
+        min-height: 350px; /* Reduced minimum height for smaller cards */
 
         @media (max-width: $layout-breakpoint-xsmall) {
           width: 100%;
@@ -43,20 +49,23 @@
       }
 
       h2 {
-        font-size: 4rem;
+        font-size: 3.5rem; /* Slightly reduced heading size */
         font-weight: 600;
+        margin-bottom: 0; /* Remove bottom margin from heading */
+        text-align: center; /* Center the heading text */
       }
 
-      ul {
-        list-style-type: disc;
-        padding: 0 2rem;
-        li {
-          margin: 2rem 0;
-          font-size: 1.7rem;
-          span {
-            font-weight: 700;
-            line-height: 2rem;
-          }
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0; /* Reduced margin */
+        
+        img {
+          max-width: 260px; /* Fixed smaller width */
+          height: auto;
+          border-radius: 8px;
         }
       }
     }

@@ -32,7 +32,7 @@ export default function Home({ projects }) {
             
             <Projects id="projects" projects={projects} />
             
-            <Marquee
+            {/* <Marquee
               className="marquee"
               gradient="false"
               gradientColor="pink"
@@ -46,7 +46,7 @@ export default function Home({ projects }) {
                 We are Launching Soon — Stay Tuned — We are Launching Soon — Stay Tuned 
                 —
               </span>
-            </Marquee>
+            </Marquee> */}
 
             <Pricing />
 

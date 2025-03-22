@@ -8,33 +8,27 @@ const Pricing = () => {
             <div className="pricing-component__simple">
               <span>Step 1</span>
               <h2>Customization</h2>
-              <ul>
-                <li><span>Ideaal voor starters:</span> Perfect voor kleine bedrijven of persoonlijke projecten.</li>
-                <li><span>Snel en Efficiënt:</span> Basisontwerp met gebruiksvriendelijke navigatie en responsieve layout.</li>
-                <li><span>Standaardfuncties Inbegrepen:</span> Contactformulier, social media, </li>
-              </ul>
+              <div className="image-container">
+                <img src="/images/step1.jpg" alt="customization" />
+              </div>
             </div>
           </div>
           <div className="pricing-component">
             <div className="pricing-component__webshop">
               <span>Step 2</span>
               <h2>Try Measurement</h2>
-              <ul>
-              <li><span>Voor E-commerce Succes:</span> Ideaal voor middelgrote bedrijven die online willen verkopen.</li>
-              <li><span>Geavanceerde Functies:</span> Productcatalogus, winkelwagentje, en veilige betaalmethoden.</li>
-              <li><span>Optimalisatie voor Conversie:</span> Ontworpen om bezoekers in klanten te converteren.</li>
-              </ul>
+              <div className="image-container">
+                <img src="/images/step2.jpg" alt="body measurement" />
+              </div>
             </div>
           </div>
           <div className="pricing-component">
             <div className="pricing-component__custom">
               <span>Step 3</span>
               <h2>Place Order</h2>
-              <ul>
-              <li><span>Volledig Op Maat:</span> Unieke oplossingen voor complexe eisen en specifieke wensen.</li>
-              <li><span>Geavanceerde Functionaliteit:</span> Integratie van databases, API's, en speciale toepassingen.</li>
-              <li><span>Persoonlijke Benadering:</span> Intensieve samenwerking voor een website die volledig aansluit bij uw visie.</li>
-              </ul>
+              <div className="image-container">
+                <img src="/images/step3.jpg" alt="place order" />
+              </div>
             </div>
           </div>
       </div>
