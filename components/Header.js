@@ -23,9 +23,7 @@ const Header = () => {
         <p className="about-item__text">
           At PeachMenor, our mission is to redefine the future of premium fashion by delivering exclusive, custom-fitted apparel that celebrates individuality and craftsmanship. 
           We are committed to merging advanced AI technology with artisanal techniques to create unique designs tailored to each client’s style and body, 
-          ensuring an impeccable fit and experience. Driven by an unwavering dedication to quality, we prioritize superior materials and meticulous attention to detail in every garment we produce. 
-          At the core of our philosophy is a deep respect for sustainability — we champion conscious fashion through responsible sourcing, made-to-order production, 
-          and innovative solutions that reduce waste and extend the life of each piece. PeachMenor exists to empower people with fashion that is not only personal and luxurious, but also thoughtful and lasting.
+          ensuring an impeccable fit and experience. PeachMenor exists to empower people with fashion that is not only personal and luxurious, but also thoughtful and lasting.
           </p>
       </div>
 
@@ -43,9 +41,22 @@ const Header = () => {
         We envision a future where fashion is no longer mass-produced, but meaningfully made for each person, merging innovation with artistry on a global scale.
         </p>
       </div>
-    </div>
 
-    
+      <br></br>
+      <br></br>
+
+      <div className="about-item">
+        <p className="about-item__text">
+          <span>Sustainability</span> 
+        </p>
+        <p className="about-item__text">
+        Driven by an unwavering dedication to quality, we prioritize superior materials and meticulous attention to detail in every garment we produce. 
+        At the core of our philosophy is a deep respect for sustainability — we champion conscious fashion through responsible sourcing, made-to-order production, 
+        and innovative solutions that reduce waste and extend the life of each piece.
+        </p>
+      </div>
+
+    </div>
   );
 
   // Team content is now a component rather than just text
@@ -159,35 +170,49 @@ const Header = () => {
   );
 
   const ContactUsContent = () => (
-    <div className="about-item">
-      <p className="about-item__text">
-        Have questions or feedback? We'd love to hear from you! Email us at <span>contact_us@peachmenor.com</span> or fill out our contact form <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank">Here</a>. We typically respond within 24 hours.
-      </p>
-      <div className="about-item__text">
-            <ul>
-            <li>
-                <span>San Francisco, California</span>  
-              </li>
-              <li>
-                <span>contact_us@peachmenor.com</span>  
-              </li>
-              <li>
-                <span>Phone: +1-3102545745</span>
-              </li>
-              <li>
-                <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+    <div id="contact-section" className="about-item contact-section">
+      <div className="contact-text">
+        <ul className="contact-list">
+          <li>
+            <span>San Francisco, California, United States</span>  
+          </li>
+          <li>
+            <span>E-Mail: contact_us@peachmenor.com</span>  
+          </li>
+          <li>
+            <span>Phone: +1-3102545745</span>
+          </li>
+          <li>
+            <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank" className="contact-button">Contact Us</a>
+          </li>
+        </ul>
+  
+        <p className="contact-description">
+          Have questions or feedback? We'd love to hear from you, We typically respond within 24-48 hours!
+        </p>
+      </div>    
     </div>
   );
 
   const CareerContent = () => (
-    <div className="about-item">
-      <p className="about-item__text">
-        <span>JOIN OUR TEAM, We are Hiring!</span>OUR PEOPLE ARE PASSIONATE, CURIOUS, WELL-ROUNDED, MOTIVATED AND DYNAMIC, EACH WITH THEIR OWN PERSONALITY. THEY'RE ENTHUSIASTIC ABOUT EVERYTHING THEY DO, AND ARE CREATIVE, UNSTOPPABLE, CLEVER AND PROACTIVE.
-        WOULD YOU LIKE TO BE PART OF OUR STORE TEAM?<a href="https://hire-me.notion.site/Careers-PeachMenor-1ab2e8ee212180968c76e4a1a9a875be" target="_blank"></a>
+    <div className="about-item careers-section">
+      <p className="about-item__text careers-text">
+        Our team is young, passionate, curious, motivated and dynamic, each individuals with their own personality. 
+        We're enthusiastic about everything we do, and are creative, unstoppable, clever, proactive and never afraid to fail.
       </p>
+      <div className="careers-cta">
+        <span className="careers-question">WOULD YOU LIKE TO BE PART OF OUR TECH TEAM?
+        </span>
+        <span className="careers-question">
+        <a 
+          href="https://hire-me.notion.site/Careers-PeachMenor-1ab2e8ee212180968c76e4a1a9a875be" 
+          target="_blank" 
+          className="careers-button"
+        >
+          Open Positions
+        </a>
+        </span>
+      </div>
     </div>
   );
 
@@ -250,7 +275,7 @@ const Header = () => {
   const menuItems = [
     {
       id: "about",
-      title: "ABOUT US",
+      title: "ABOUT",
       content: <VisionContent />    
     },
     {

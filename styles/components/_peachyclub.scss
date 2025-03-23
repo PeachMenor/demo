@@ -1,0 +1,56 @@
+.peachy-card {
+    background-color: #000000;
+    padding: 40px;
+    border-radius: 8px;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    
+    .font-bold {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: 300;
+    }
+    
+    .peachy-button {
+      background-color: #ba0d71;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px 16px;
+      border-radius: 0px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+  }
+  
+  // Center style for the text and button group
+  .flex {
+    display: flex;
+    
+    &.justify-center {
+      justify-content: center;
+    }
+    
+    &.items-center {
+      align-items: center;
+    }
+    
+    &.w-full {
+      width: 100%;
+    }
+    
+    &.gap-4 {
+      gap: 30px;
+    }
+  }
+  
+  .w-11\/12 {
+    width: 91.666667%;
+  }

@@ -206,7 +206,7 @@
 .about-item {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   
@@ -243,7 +243,7 @@
   
   &__text {
     font-size: 1.4rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #666;
   }
   
@@ -371,14 +371,14 @@
 .about-item__title {
   /* Keep existing styles */
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .about-item__subtitle {
   justify-content: center; /* Center the co-founder tag and LinkedIn icon */
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .about-item__details {
@@ -511,4 +511,127 @@
     font-size: 1.1rem;
     padding: 12px;
   }
+}
+
+
+/* Career Section Styles */
+.careers-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.careers-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.careers-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.careers-question {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: $black;
+}
+
+.careers-button {
+  background-color: $pinkhard;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(186, 13, 113, 0.3);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: $layout-breakpoint-medium) {
+  .careers-text {
+    font-size: 1.4rem;
+  }
+  
+  .careers-question {
+    font-size: 1.6rem;
+  }
+  
+  .careers-button {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: $layout-breakpoint-xsmall) {
+  .careers-text {
+    font-size: 1.3rem;
+  }
+  
+  .careers-question {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Contact section specific styles */
+.contact-section {
+  padding: 30px;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #ba0d71;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(186, 13, 113, 0.3);
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin: 40px auto 20px;
+  max-width: 70%;
+  display: block;
 }

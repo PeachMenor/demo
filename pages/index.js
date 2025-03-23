@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import PeachyClub from "../components/PeachyClub";
 
 // import Marquee from "../components/Marquee";
 import Marquee from "react-fast-marquee";
@@ -50,21 +51,9 @@ export default function Home({ projects }) {
 
             <Pricing />
 
-            {/* <About /> */}
+            <PeachyClub />
 
           </div>
-
-            <div className="marqueewaitlist">
-              <span className="waitlist-message">
-                <span className="waitlist-heading">Join The WaitList</span>
-                <button 
-                  onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
-                  className="waitlist-button"
-                >
-                  Join Peachy Club
-                </button>
-              </span>
-            </div>
 
           <Footer />
         </>

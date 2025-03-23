@@ -1,39 +1,51 @@
 import { useState } from "react";
 
 const Footer = () => {
-  const [active, setActive] = useState(false);
+  const [email, setEmail] = useState("");
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle newsletter signup logic here
+    console.log("Email submitted:", email);
+    setEmail("");
+  };
 
   return (
     <footer id="footer">
       <div className="footer-container">
-        {/* Three evenly spaced columns */}
-        <div className="footer-columns">
-          {/* Column 1: Contact Us */}
+        {/* Newsletter Section */}
+        <div className="newsletter-section">
+          <h3>GET IN TOUCH</h3>
           
-
-          {/* Column 2: Social Links */}
-          <div className="footer-column">
-            <h1>Get in Touch</h1>
-            <br></br>
-            <br></br>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/peachmenor" target="_blank">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/peachmenor/" target="_blank">
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
+          <form onSubmit={handleSubmit} className="newsletter-form">
+            <input 
+              type="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              placeholder="Enter your email" 
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
 
-        {/* Footer Bottom - Now with better spacing */}
-        <div className="footer-bottom">
-          <span className="copy">PeachMenor | All Rights Reserved &copy; 2025</span>
+        {/* Social Media Links */}
+        <div className="social-links">
+          <a href="https://www.linkedin.com/company/peachmenor" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <a href="https://www.instagram.com/peachmenor" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+          {/* <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TIKTOK</a> */}
+          {/* <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">FACEBOOK</a> */}
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">X</a>
+          {/* <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">PINTEREST</a> */}
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+        </div>
+
+        {/* Privacy/Legal Links */}
+        <div className="legal-links">
+          <a>PEACHMENOR | ALL RIGHTS RESERVED &copy; 2025</a>
+          {/* <a href="/cookie-preferences">COOKIE AND AD PREFERENCES</a>
+          <a href="/privacy-policy">PRIVACY AND COOKIES POLICY</a> */}
+          <a href="/terms">TERMS OF USE</a>
         </div>
       </div>
     </footer>

@@ -1,141 +1,116 @@
-.marquee {
-  color: $white;
-  background-color: #545333;
-  padding: 2rem 0 2rem 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border-radius: 0 0 10px 10px;
-  span {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-  }
-}
-
-.marqueewaitlist {
-  color: $white;
-  background-color: #545333;
-  padding: 4rem 2rem 4rem 2rem;
-  overflow: hidden;
-  white-space: nowrap;
-  // border-radius: 0px 0px 10px 10px;
-  span {
-    font-size: 4.5rem;
-    // text-transform: uppercase;
-  }
-  
-  .waitlist-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .waitlist-heading {
-      font-size: 3rem;
-      margin-right: 3rem;
-      margin-top: auto;
-      font-weight: bold;
-    }
-    
-    .waitlist-button {
-      background-color: #ba0d71;
-      border: none;
-      padding: 10px 20px;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-      font-size: 2rem;
-      display: inline-block;
-      white-space: nowrap;
-    }
-  }
-}
-
+// Footer styles
 footer {
   width: 100%;
-  background: #f0f3f5;
-  padding: 2rem 5%;
+  background: white;
+  padding: 9rem 0 13rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Neue-Helvetica, Helvetica, Arial;
 }
 
 .footer-container {
   width: 100%;
   max-width: 1200px;
-}
-
-/* Three evenly spaced columns */
-.footer-columns {
   display: flex;
-  justify-content: space-evenly; /* Ensures even spacing */
-  align-items: flex-start;
-  width: 100%;
-  text-align: left; /* Aligning text to the left */
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.footer-column {
-  flex: 1; /* Ensures equal width for all columns */
-  padding: 0 1rem; /* Adjusts spacing between columns */
-  min-width: 250px; /* Ensures good spacing on smaller screens */
-}
-
-/* span */
-.footer-column span {
-  font-size: 1.4rem;
-  color: $black;
-  margin-bottom: 0.8rem;
-}
-
-/* Align text to the left */
-.footer-column h1 {
-  font-size: 2rem;
-  color: $black;
-  margin-bottom: 0.8rem;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-column li {
-  margin-bottom: 1rem; /* Adds space between the list items */
-}
-
-.footer-column li a {
-  color: $black;
-  font-size: 1.4rem;
-  text-decoration: none;
-}
-
-.footer-column li a:hover {
-  text-decoration: underline;
-}
-
-/* Email Section */
-.email-container {
-  font-size: 1.4rem;
-  color: $pinkhard;
-}
-
-/* Style for 'We are Hiring!' link */
-.hiring-link {
-  font-size: 1.5rem;
-  color: $pinkhard; /* Make "We are Hiring!" orange */
-  text-decoration: none;
-}
-
-.hiring-link:hover {
-  text-decoration: underline;
-}
-
-/* Footer Bottom - Centered and Less Space */
-.footer-bottom {
-  margin-top: 1.5rem; /* Reduced space */
-  padding: 0.5rem 0;
+// Newsletter section
+.newsletter-section {
   text-align: center;
-  color: $black;
-  font-size: 1.4rem;
-  border-top: 1px solid $black;
+  width: 100%;
+  margin-top: 20rem;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 0rem;
+  }
+
+  .newsletter-form {
+    display: none; // Hidden in the image, but you can enable if needed
+    margin-top: 1rem;
+    
+    input {
+      padding: 0.5rem 1rem;
+      width: 300px;
+      border: 1px solid #ccc;
+      margin-right: 0.5rem;
+    }
+    
+    button {
+      padding: 0.5rem 1.5rem;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// Social media links
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  width: 100%;
+  margin-bottom: 17rem;
+  
+  a {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Legal/Privacy links
+.legal-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  width: 100%;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  
+  a {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .social-links {
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+  }
+  
+  .legal-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
 }
