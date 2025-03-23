@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("vision");
+  const [activeTab, setActiveTab] = useState("about");
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleMenu = () => {
@@ -163,6 +163,31 @@ const Header = () => {
       <p className="about-item__text">
         Have questions or feedback? We'd love to hear from you! Email us at <span>contact_us@peachmenor.com</span> or fill out our contact form <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank">Here</a>. We typically respond within 24 hours.
       </p>
+      <div className="about-item__text">
+            <ul>
+            <li>
+                <span>San Francisco, California</span>  
+              </li>
+              <li>
+                <span>contact_us@peachmenor.com</span>  
+              </li>
+              <li>
+                <span>Phone: +1-3102545745</span>
+              </li>
+              <li>
+                <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+  );
+
+  const CareerContent = () => (
+    <div className="about-item">
+      <p className="about-item__text">
+        <span>JOIN OUR TEAM, We are Hiring!</span>OUR PEOPLE ARE PASSIONATE, CURIOUS, WELL-ROUNDED, MOTIVATED AND DYNAMIC, EACH WITH THEIR OWN PERSONALITY. THEY'RE ENTHUSIASTIC ABOUT EVERYTHING THEY DO, AND ARE CREATIVE, UNSTOPPABLE, CLEVER AND PROACTIVE.
+        WOULD YOU LIKE TO BE PART OF OUR STORE TEAM?<a href="https://hire-me.notion.site/Careers-PeachMenor-1ab2e8ee212180968c76e4a1a9a875be" target="_blank"></a>
+      </p>
     </div>
   );
 
@@ -224,19 +249,24 @@ const Header = () => {
   // Reordered menu items - Vision first, then Team
   const menuItems = [
     {
-      id: "vision",
-      title: "Mission & Vision",
+      id: "about",
+      title: "ABOUT US",
       content: <VisionContent />    
     },
     {
       id: "team",
-      title: "Team",
+      title: "TEAM",
       content: <TeamContent />
     },
     {
       id: "contact",
-      title: "Contact Us",
+      title: "CONTACT",
       content: <ContactUsContent />     
+    },
+    {
+      id: "career",
+      title: "CAREERS",
+      content: <CareerContent />     
     },
     {
       id: "faq",
