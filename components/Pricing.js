@@ -6,7 +6,7 @@ const Pricing = () => {
       <div className="pricing-container">
           <div className="pricing-component">
             <div className="pricing-component__simple">
-              <span>Step 1</span>
+              <span>Step 1: On Limited Apparel</span>
               <h2>Customization</h2>
               <div className="image-container">
                 <img src="/images/step1.png" alt="customization" />
@@ -15,8 +15,8 @@ const Pricing = () => {
           </div>
           <div className="pricing-component">
             <div className="pricing-component__webshop">
-              <span>Step 2</span>
-              <h2>Try Measurement</h2>
+              <span>Step 2: Body Measurements & Try ons</span>
+              <h2>AI Scan via App</h2>
               <div className="image-container">
                 <img src="/images/step2.png" alt="body measurement" />
               </div>
@@ -24,8 +24,8 @@ const Pricing = () => {
           </div>
           <div className="pricing-component">
             <div className="pricing-component__custom">
-              <span>Step 3</span>
-              <h2>Place Order</h2>
+              <span>Step 3: Place Order</span>
+              <h2>Requisition</h2>
               <div className="image-container">
                 <img src="/images/step3.png" alt="place order" />
               </div>

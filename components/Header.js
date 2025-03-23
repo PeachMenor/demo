@@ -18,19 +18,34 @@ const Header = () => {
     <div className="about">
       <div className="about-item">
         <p className="about-item__text">
-          At <span>PeachMenor</span>, we redefine <span>premium fashion</span> by seamlessly blending technology with craftsmanship.
-          Our mission is to empower individuals with <span>custom-fitted</span> apparel that not only fits flawlessly but also reflects their unique style.
-          With our <span>Build Your Own Design</span> feature, we offer personalized creations for those who embrace life on their own terms.
-          Rooted in innovation, sustainability, and an unwavering commitment to quality, we provide an exclusive experience where style meets individuality.
-          Through <span>AI-based virtual try-ons</span> and a seamless design process, we make premium fashion effortless, accessible, and truly one of a kind.
+          <span>Our Mission</span> 
         </p>
-        <br></br>
         <p className="about-item__text">
-        We envision a world where fashion transcends boundaries, where every individual experiences the luxury of perfectly tailored clothing that celebrates their unique identity. PeachMenor aspires to pioneer the intersection of cutting-edge technology and timeless craftsmanship, creating a new paradigm in premium fashion where personalization is paramount.
-        Our vision is to cultivate a global community that values individuality, quality, and conscious consumption—transforming how people express themselves through what they wear.
+          At PeachMenor, our mission is to redefine the future of premium fashion by delivering exclusive, custom-fitted apparel that celebrates individuality and craftsmanship. 
+          We are committed to merging advanced AI technology with artisanal techniques to create unique designs tailored to each client’s style and body, 
+          ensuring an impeccable fit and experience. Driven by an unwavering dedication to quality, we prioritize superior materials and meticulous attention to detail in every garment we produce. 
+          At the core of our philosophy is a deep respect for sustainability — we champion conscious fashion through responsible sourcing, made-to-order production, 
+          and innovative solutions that reduce waste and extend the life of each piece. PeachMenor exists to empower people with fashion that is not only personal and luxurious, but also thoughtful and lasting.
+          </p>
+      </div>
+
+      <br></br>
+      <br></br>
+
+      <div className="about-item">
+        <p className="about-item__text">
+          <span>Our Vision</span> 
+        </p>
+        <p className="about-item__text">
+        Our vision at PeachMenor is to lead a global transformation in the fashion industry—where technology and tradition come together to create a more personal, exclusive, and sustainable future. 
+        We aspire to be the definitive destination for individuals seeking clothing that reflects their unique identity, crafted with precision and care. By pioneering AI-driven customization, eco-conscious practices, 
+        and elevated design experiences, we aim to set a new standard for premium fashion—one where every garment tells a story, every detail speaks to quality, and every purchase contributes to a more responsible world. 
+        We envision a future where fashion is no longer mass-produced, but meaningfully made for each person, merging innovation with artistry on a global scale.
         </p>
       </div>
     </div>
+
+    
   );
 
   // Team content is now a component rather than just text
@@ -42,7 +57,7 @@ const Header = () => {
         </div>
         <h6 className="about-item__title">Shaurya Seth</h6>
         <div className="about-item__subtitle">
-          <span className="co-founder-button">Co-Founder</span>
+          <span className="co-founder-button">Co-Founder, CEO</span>
           <a href="https://linkedin.com/in/shauryaseth1412" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -77,7 +92,7 @@ const Header = () => {
         </div>
         <h6 className="about-item__title">Prakash Nidhi Verma</h6>
         <div className="about-item__subtitle">
-          <span className="co-founder-button">Co-Founder</span>
+          <span className="co-founder-button">Co-Founder, CTO</span>
           <a href="https://linkedin.com/in/pnidhi26" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -112,7 +127,7 @@ const Header = () => {
         </div>
         <h6 className="about-item__title">Sri Laya Pentapalli</h6>
         <div className="about-item__subtitle">
-          <span className="co-founder-button">Co-Founder</span>
+          <span className="co-founder-button">Co-Founder, CSO</span>
           <a href="https://linkedin.com/in/srilayap" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -210,7 +225,7 @@ const Header = () => {
   const menuItems = [
     {
       id: "vision",
-      title: "Vision & Mission",
+      title: "Mission & Vision",
       content: <VisionContent />    
     },
     {
