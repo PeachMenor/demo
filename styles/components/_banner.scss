@@ -42,6 +42,19 @@
   font-size: 1.5rem;
   line-height: 2.6rem;
   display: inline-block;
+  background-color: #ba0d71;
+  border: none;
+  padding: 10px 15px;
+  color: white; 
+  cursor: pointer; 
+  font-weight: bold; 
+  border-radius: 5px;
+  margin-top: 0px;
+
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
 }
 
 /* Media Queries */
