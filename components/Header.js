@@ -223,16 +223,16 @@ const Header = () => {
         answer: "PeachMenor uses advanced AI technology to create perfectly fitted garments. Simply provide your measurements through our easy-to-follow guide, or upload photos for our AI to analyze. Our proprietary algorithm ensures each piece is tailored specifically to your unique body shape."
       },
       {
-        question: "What makes PeachMenor different from other custom clothing brands?",
-        answer: "PeachMenor stands apart through our combination of cutting-edge technology, premium sustainable materials, and unparalleled customization options. Our 'Build Your Own Design' feature lets you create truly one-of-a-kind pieces while our AI-powered virtual try-on gives you confidence in your selections before purchasing."
+        question: "What makes PeachMenor different?",
+        answer: "Unlike traditional fashion brands, PeachMenor offers true personalization through AI-driven technology. We don't just sell clothes; we create bespoke fashion experiences. Our platform combines precise body measurement AI, virtual try-on technology, and intelligent style curation to deliver custom designs that perfectly match individual body types, personal style preferences, and sustainability standards. Every garment is a unique expression of you."
       },
       {
         question: "How long does it take to receive my custom order?",
-        answer: "Most custom orders are completed and shipped within 10-14 business days. This timeframe allows our expert craftspeople to meticulously create your personalized garment. For special rush orders, please contact our customer service team directly."
+        answer: "With options for standard delivery and express delivery, you can track your order to be delivered within a reasonable amount of time for the best in house quality you deserve."
       },
       {
-        question: "What is your return policy for custom items?",
-        answer: "While custom items are created specifically for you, we stand behind our fit guarantee. If your garment doesn't fit perfectly, we'll adjust it free of charge. For other issues, we offer store credit or exchanges within 30 days. Please note that highly personalized designs may be subject to our specialized return policy."
+        question: "What is our return policy for custom items?",
+        answer: "While custom items are highly specific to your needs, we offer an option for returns on them within 7 days of receiving the order. We stand by the guarantee of what you see is what you receive."
       }
     ];
 
