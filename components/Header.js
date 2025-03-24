@@ -177,10 +177,10 @@ const Header = () => {
             <span>San Francisco, California, United States</span>  
           </li>
           <li>
-            <span>E-Mail: contact_us@peachmenor.com</span>  
+            <span>contact_us@peachmenor.com</span>  
           </li>
           <li>
-            <span>Phone: +1-3102545745</span>
+            <span>+1-3102545745</span>
           </li>
           <li>
             <a href="https://forms.gle/qfFWRorTftNcMGHLA" target="_blank" className="contact-button">Contact Us</a>

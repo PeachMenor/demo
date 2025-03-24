@@ -30,6 +30,8 @@ export default function Home({ projects }) {
           <div className="container">
             <Header />
             <Banner />
+            <br></br>
+            <br></br>
             
             <Projects id="projects" projects={projects} />
             
