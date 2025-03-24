@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 // Import the image at the top of your file
-const imagePath = "/images/comingsoon.avif";
+const imagePath = "/images/comingsoon.png";
 
 const Banner = () => {
   return (
