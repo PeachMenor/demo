@@ -114,11 +114,16 @@
   &:hover {
     background-color: $black;
   }
+  
   span {
     position: absolute;
     width: 20px;
     height: 3px;
     background: $black;
+
+    &:hover {
+      background: white;
+    }
     
     &:first-child {
       transform: rotate(45deg);
