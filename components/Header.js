@@ -325,16 +325,16 @@ const Header = () => {
             <button 
               onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
               className="waitlist-button"
-              style={{ 
-                backgroundColor: '#ba0d71', 
-                border: 'none', 
-                padding: '10px 15px', 
-                color: 'white', 
-                cursor: 'pointer', 
-                fontWeight: 'bold', 
-                borderRadius: '5px',
-                marginTop: '0px' 
-              }}
+              // style={{ 
+              //   backgroundColor: '#ba0d71', 
+              //   border: 'none', 
+              //   padding: '10px 15px', 
+              //   color: 'white', 
+              //   cursor: 'pointer', 
+              //   fontWeight: 'bold', 
+              //   borderRadius: '5px',
+              //   marginTop: '0px' 
+              // }}
             >
               Join Peachy Club
             </button>
