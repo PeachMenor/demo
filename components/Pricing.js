@@ -24,8 +24,8 @@ const Pricing = () => {
           </div>
           <div className="pricing-component">
             <div className="pricing-component__custom">
-              <span>Step 3: Requisition</span>
-              <h2>Place Order</h2>
+              <span>Step 3: Place Order</span>
+              <h2>Make a Purchase</h2>
               <div className="image-container">
                 <img src="/images/step3.png" alt="place order" />
               </div>

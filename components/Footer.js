@@ -35,9 +35,8 @@ const Footer = () => {
           <a href="https://www.instagram.com/peachmenor" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
           {/* <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TIKTOK</a> */}
           {/* <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">FACEBOOK</a> */}
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">X</a>
-          {/* <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">PINTEREST</a> */}
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+          <a href="https://x.com/PeachMenor82076" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://www.youtube.com/channel/UCr4dgNXgSgSe5Gk_zs5rs5A" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
         </div>
 
         {/* Privacy/Legal Links */}
