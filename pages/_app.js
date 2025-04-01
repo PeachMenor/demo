@@ -31,6 +31,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Cursor />
       <Component {...pageProps} />
+      <Cursor />
     </>
   );
 }
