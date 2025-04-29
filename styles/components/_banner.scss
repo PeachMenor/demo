@@ -42,6 +42,8 @@
 }
 
 .waitlist-button {
+  position: absolute;
+  z-index: 2;
   font-size: 1.5rem;
   line-height: 2.6rem;
   display: inline-block;
