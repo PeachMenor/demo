@@ -23,6 +23,7 @@
   justify-content: center;
   align-self: flex-start; /* This helps position the image higher */
   margin-top: -2vh; /* Additional adjustment specifically for the image */
+  position: relative;
 }
 
 .waitlist-content {
@@ -39,6 +40,9 @@
 }
 
 .waitlist-button {
+  position: absolute;
+  top: 50px;
+  left: 100px;
   font-size: 1.5rem;
   line-height: 2.6rem;
   display: inline-block;
