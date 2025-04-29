@@ -22,8 +22,8 @@ const Banner = () => {
             alt="Banner promotional image" 
             style={{ 
               borderRadius: "20px",
-              maxWidth: "100%", // Increased from 100%
-              width: "100%",
+              maxWidth: "90%", // Increased from 100%
+              width: "auto",
               height: "auto",
               margin: "0 auto", // Center the image
               display: "block" // Needed for margin auto to work
