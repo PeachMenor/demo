@@ -23,7 +23,7 @@ const Banner = () => {
             style={{ 
               borderRadius: "20px",
               maxWidth: "100%", // Increased from 100%
-              width: "auto",
+              width: "100%",
               height: "auto",
               margin: "0 auto", // Center the image
               display: "block" // Needed for margin auto to work
