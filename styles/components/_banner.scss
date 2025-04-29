@@ -24,6 +24,7 @@
   align-self: flex-start; /* This helps position the image higher */
   margin-top: -2vh; /* Additional adjustment specifically for the image */
   position: relative;
+  z-index: 1;
 }
 
 .waitlist-content {
