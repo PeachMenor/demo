@@ -15,7 +15,7 @@ const sampleData = [
   },
   {
     id: "2",
-    title: "True-Fit prediction",
+    title: "True-Fit Prediction",
     slug: "Get precise fit prediction to help you find your perfect size, every time ",
     mediaUrl: "../images/c1.png",
     iframeLink: " ",
