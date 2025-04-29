@@ -18,12 +18,10 @@ const Header = () => {
     <div className="about">
       <div className="about-item">
         <p className="about-item__text">
-          <span>Our Mission</span> 
+          <span>Mission</span> 
         </p>
         <p className="about-item__text">
-          At PeachMenor, our mission is to redefine the future of premium fashion by delivering exclusive, custom-fitted apparel that celebrates individuality and craftsmanship. 
-          We are committed to merging advanced AI technology with artisanal techniques to create unique designs tailored to each client’s style and body, 
-          ensuring an impeccable fit and experience. PeachMenor exists to empower people with fashion that is not only personal and luxurious, but also thoughtful and lasting.
+          At PeachMenor AI, our mission is to empower individuals to embrace their true style with confidence through hyper-personalized, AI-driven fashion experiences. We aim to simplify wardrobe organization, enhance smarter outfit decisions, and make personal styling accessible to everyone. By bridging technology and individuality, PeachMenor AI helps people curate wardrobes that reflect who they are — making fashion more effortless, expressive, and tailored to each unique journey.
           </p>
       </div>
 
@@ -32,29 +30,13 @@ const Header = () => {
 
       <div className="about-item">
         <p className="about-item__text">
-          <span>Our Vision</span> 
+          <span>Vision</span> 
         </p>
         <p className="about-item__text">
-        Our vision at PeachMenor is to lead a global transformation in the fashion industry—where technology and tradition come together to create a more personal, exclusive, and sustainable future. 
-        We aspire to be the definitive destination for individuals seeking clothing that reflects their unique identity, crafted with precision and care. By pioneering AI-driven customization, eco-conscious practices, 
-        and elevated design experiences, we aim to set a new standard for premium fashion—one where every garment tells a story, every detail speaks to quality, and every purchase contributes to a more responsible world. 
-        We envision a future where fashion is no longer mass-produced, but meaningfully made for each person, merging innovation with artistry on a global scale.
+Our vision at PeachMenor AI is to redefine the future of fashion by creating intelligent, sustainable wardrobes powered by technology. We envision a world where every closet is personalized, responsive, and aligned with the evolving lifestyles of individuals. By blending innovation, emotional expression, and conscious choices, PeachMenor AI strives to build a fashion ecosystem where personalization, sustainability, and smart living are at the heart of every style experience.
         </p>
       </div>
 
-      <br></br>
-      <br></br>
-
-      <div className="about-item">
-        <p className="about-item__text">
-          <span>Sustainability</span> 
-        </p>
-        <p className="about-item__text">
-        Driven by an unwavering dedication to quality, we prioritize superior materials and meticulous attention to detail in every garment we produce. 
-        At the core of our philosophy is a deep respect for sustainability — we champion conscious fashion through responsible sourcing, made-to-order production, 
-        and innovative solutions that reduce waste and extend the life of each piece.
-        </p>
-      </div>
 
     </div>
   );
@@ -95,77 +77,8 @@ const Header = () => {
           </ul>
         </div>
       </div>
+
   
-      {/* The other team members follow the same pattern - I've kept them as is since the CSS will apply to all */}
-      <div className="about-item">
-        <div className="about-item__image-container">
-          <img src='/images/cf2.png' alt="prax" className="about-item__image" />
-        </div>
-        <h6 className="about-item__title">Prakash Nidhi Verma</h6>
-        <div className="about-item__subtitle">
-          <span className="co-founder-button">Co-Founder, CTO</span>
-          <a href="https://linkedin.com/in/pnidhi26" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
-        </div>
-        <p className="about-item__text">
-          Prakash is the technological mastermind and product strategist behind PeachMenor.
-        </p>
-  
-        <div className="about-item__details">
-          <p className="about-item__heading"><strong>Education:</strong></p>
-          <ul className="about-item__list">
-            <li>MS, Computer Science @California State University</li>
-            <li>B.Tech, Computer Science @IIIT Jabalpur</li>
-          </ul>
-  
-          <p className="about-item__heading"><strong>Background:</strong></p>
-          <ul className="about-item__list">
-            <li>Product Analyst @Amazon (AWS)</li>
-            <li>Product Manager @Replicon</li>
-            <li>Software Engineer @UpGrad</li>
-          </ul>
-        </div>
-      </div>
-  
-      <div className="about-item">
-        <div className="about-item__image-container">
-          <img src='/images/cf3.png' alt="laya" className="about-item__image" />
-        </div>
-        <h6 className="about-item__title">Sri Laya Pentapalli</h6>
-        <div className="about-item__subtitle">
-          <span className="co-founder-button">Co-Founder, CSO</span>
-          <a href="https://linkedin.com/in/srilayap" target="_blank" rel="noopener noreferrer" className="about-item__linkedin">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="about-item__icon">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
-        </div>
-        <p className="about-item__text">
-          Laya brings years of Consulting, Management and Sales expertise from supply chain industry.
-        </p>
-  
-        <div className="about-item__details">
-          <p className="about-item__heading"><strong>Education:</strong></p>
-          <ul className="about-item__list">
-            <li>MBA, General @UC Los Angeles</li>
-            <li>MEM, Sales & Marketing @Audencia France</li>
-            <li>B.Tech, EEE @SRM Chennai</li>
-          </ul>
-  
-          <p className="about-item__heading"><strong>Background:</strong></p>
-          <ul className="about-item__list">
-            <li>Growth Product Manager @Milkyway X</li>
-            <li>Senior Lead Consultant @ADP</li>
-          </ul>
-        </div>
-      </div>
     </div>
   );
 
@@ -216,60 +129,60 @@ const Header = () => {
     </div>
   );
 
-  const FaqContent = () => {
-    const faqs = [
-      {
-        question: "How does PeachMenor's custom sizing work?",
-        answer: "PeachMenor uses advanced AI technology to create perfectly fitted garments. Simply provide your measurements through our easy-to-follow guide, or upload photos for our AI to analyze. Our proprietary algorithm ensures each piece is tailored specifically to your unique body shape."
-      },
-      {
-        question: "What makes PeachMenor different?",
-        answer: "Unlike traditional fashion brands, PeachMenor offers true personalization through AI-driven technology. We don't just sell clothes; we create bespoke fashion experiences. Our platform combines precise body measurement AI, virtual try-on technology, and intelligent style curation to deliver custom designs that perfectly match individual body types, personal style preferences, and sustainability standards. Every garment is a unique expression of you."
-      },
-      {
-        question: "How long does it take to receive my custom order?",
-        answer: "With options for standard delivery and express delivery, you can track your order to be delivered within a reasonable amount of time for the best in house quality you deserve."
-      },
-      {
-        question: "What is our return policy for custom items?",
-        answer: "While custom items are highly specific to your needs, we offer an option for returns on them within 7 days of receiving the order. We stand by the guarantee of what you see is what you receive."
-      }
-    ];
+  // const FaqContent = () => {
+  //   const faqs = [
+  //     {
+  //       question: "How does PeachMenor's custom sizing work?",
+  //       answer: "PeachMenor uses advanced AI technology to create perfectly fitted garments. Simply provide your measurements through our easy-to-follow guide, or upload photos for our AI to analyze. Our proprietary algorithm ensures each piece is tailored specifically to your unique body shape."
+  //     },
+  //     {
+  //       question: "What makes PeachMenor different?",
+  //       answer: "Unlike traditional fashion brands, PeachMenor offers true personalization through AI-driven technology. We don't just sell clothes; we create bespoke fashion experiences. Our platform combines precise body measurement AI, virtual try-on technology, and intelligent style curation to deliver custom designs that perfectly match individual body types, personal style preferences, and sustainability standards. Every garment is a unique expression of you."
+  //     },
+  //     {
+  //       question: "How long does it take to receive my custom order?",
+  //       answer: "With options for standard delivery and express delivery, you can track your order to be delivered within a reasonable amount of time for the best in house quality you deserve."
+  //     },
+  //     {
+  //       question: "What is our return policy for custom items?",
+  //       answer: "While custom items are highly specific to your needs, we offer an option for returns on them within 7 days of receiving the order. We stand by the guarantee of what you see is what you receive."
+  //     }
+  //   ];
 
-    return (
-      <div className="faq-container">
-        {faqs.map((faq, index) => (
-          <div key={index} className="faq-item">
-            <div 
-              className={`faq-question ${openFaq === index ? 'active' : ''}`} 
-              onClick={() => toggleFaq(index)}
-            >
-              <span>{faq.question}</span>
-              <div className="faq-icon">
-                {openFaq === index ? 
-                  <span className="minus"></span> : 
-                  <span className="plus"></span>
-                }
-              </div>
-            </div>
-            <AnimatePresence>
-              {openFaq === index && (
-                <motion.div 
-                  className="faq-answer"
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <p>{faq.answer}</p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        ))}
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="faq-container">
+  //       {faqs.map((faq, index) => (
+  //         <div key={index} className="faq-item">
+  //           <div 
+  //             className={`faq-question ${openFaq === index ? 'active' : ''}`} 
+  //             onClick={() => toggleFaq(index)}
+  //           >
+  //             <span>{faq.question}</span>
+  //             <div className="faq-icon">
+  //               {openFaq === index ? 
+  //                 <span className="minus"></span> : 
+  //                 <span className="plus"></span>
+  //               }
+  //             </div>
+  //           </div>
+  //           <AnimatePresence>
+  //             {openFaq === index && (
+  //               <motion.div 
+  //                 className="faq-answer"
+  //                 initial={{ height: 0, opacity: 0 }}
+  //                 animate={{ height: "auto", opacity: 1 }}
+  //                 exit={{ height: 0, opacity: 0 }}
+  //                 transition={{ duration: 0.3 }}
+  //               >
+  //                 <p>{faq.answer}</p>
+  //               </motion.div>
+  //             )}
+  //           </AnimatePresence>
+  //         </div>
+  //       ))}
+  //     </div>
+  //   );
+  // };
 
   // Reordered menu items - Vision first, then Team
   const menuItems = [
@@ -293,11 +206,11 @@ const Header = () => {
       title: "CAREERS",
       content: <CareerContent />     
     },
-    {
-      id: "faq",
-      title: "FAQ",
-      content: <FaqContent />     
-    }
+    // {
+    //   id: "faq",
+    //   title: "FAQ",
+    //   content: <FaqContent />     
+    // }
   ];
 
   return (
