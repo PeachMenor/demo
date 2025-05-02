@@ -31,8 +31,8 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div className="social-links">
-          <a href="https://www.linkedin.com/company/peachmenor" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-          <a href="https://www.instagram.com/peachmenor" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/company/peachmenor-ai" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <a href="https://www.instagram.com/peachmenor.ai?igsh=ZmJiZ2hnc3k1ODc%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
           {/* <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TIKTOK</a> */}
           {/* <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">FACEBOOK</a> */}
           <a href="https://x.com/PeachMenor82076" target="_blank" rel="noopener noreferrer">X</a>
