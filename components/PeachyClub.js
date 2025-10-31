@@ -7,7 +7,7 @@ const PeachyClub = () => {
         <div className="flex items-center gap-4 justify-center">
           <span className="font-bold">GET INTO WAITLIST NOW</span>
           <button 
-            onClick={() => window.open('https://forms.gle/mj251ndoMVKHupYU6', '_blank', 'noopener,noreferrer')}
+            onClick={() => window.open('https://forms.gle/jmALJJsbF5zgi6cx6', '_blank', 'noopener,noreferrer')}
             className="peachy-button"
           >
             Join Peachy Club
